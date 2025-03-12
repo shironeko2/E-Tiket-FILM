@@ -170,30 +170,6 @@
         color: #ddd;
         font-size: 14px;
       }
-      .video-container {
-        position: relative;
-        width: 90%;
-        max-width: 600px;
-        background: transparent;
-        padding: 15px;
-        border-radius: 10px;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-      }
-      .video-container iframe {
-        width: 100%;
-        height: 300px;
-        border: auto;
-        border-radius: 10px;
-      }
-      @media (max-width: 768px) {
-        .video-container {
-          width: 95%;
-          padding: 10px;
-        }
-        .video-container iframe {
-          height: 200px;
-        }
-      }
     </style>
   </head>
 
@@ -203,8 +179,7 @@
     </nav>
     <div class="container">
       <h1>Daftar Film Yang Tersedia!</h1>
-      <br />
-      <br />
+      <br /><br />
       <div class="movies">
         <div class="movie">
           <img src="https://media.21cineplex.com/webcontent/gallery/pictures/173950214164351_287x421.jpg" alt="SINGSOT" />
@@ -217,17 +192,6 @@
             <button class="ticket-btn" onclick="changeTicket('ticketCount1', 'totalPrice1', 1)">+</button>
           </div>
           <button class="btn" onclick="pesanTiket('SINGSOT', 'ticketCount1')">Pesan via WhatsApp</button>
-          <br />
-          <div class="video-container">
-            <iframe
-              src="https://www.youtube.com/embed/K-sz_OP33mk"
-              title="Singsot - Official Trailer"
-              frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              referrerpolicy="strict-origin-when-cross-origin"
-              allowfullscreen
-            ></iframe>
-          </div>
         </div>
 
         <div class="movie">
@@ -241,15 +205,9 @@
             <button class="ticket-btn" onclick="changeTicket('ticketCount2', 'totalPrice2', 1)">+</button>
           </div>
           <button class="btn" onclick="pesanTiket('DESA MATI', 'ticketCount2')">Pesan via WhatsApp</button>
-          <br />
-          <div class="video-container">
-            <iframe
-              src="https://www.youtube.com/embed/8LhXaehoFv0" title="Desa Mati The Movie - Official Trailer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-          </div>
         </div>
       </div>
     </div>
-
     <div class="policy">
       <h3>Kebijakan & Ketentuan</h3>
       <p>OPEN PRESALE FILM CGV dan CINEPOLIS</p>
@@ -261,13 +219,6 @@
       <p>✅ Promo untuk Semua CGV & CINEPOLIS</p>
       <p>✅ Garansi dijamin 100% jika ada kendala</p>
       <p>✅ tiket dan barcode legal</p>
-    </div>
-
-    <div class="policy">
-      <h3>Format Pembelian</h3>
-      <p>1.</p>
-      <p>2.</p>
-      <p>3.</p>
     </div>
 
     <footer class="footer">
@@ -304,5 +255,6 @@
         window.open(waLink, '_blank');
       }
     </script>
+
   </body>
 </html>
